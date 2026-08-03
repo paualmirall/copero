@@ -1,1 +1,33 @@
-<div id="app"></div><script type="module" src="/src/main.ts"></script>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#164b3c" />
+    <title>Copero — Tu historia en el fútbol</title>
+  </head>
+  <body>
+    <div id="app">
+      <main class="boot-screen">
+        <strong>COPERO</strong>
+        <p>Cargando tu carrera…</p>
+      </main>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+    <style>
+      .boot-screen {
+        align-items: center;
+        background: #164b3c;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-family: system-ui, sans-serif;
+        inset: 0;
+        justify-content: center;
+        position: fixed;
+      }
+      .boot-screen strong { color: #d7fa4a; font-size: 2rem; letter-spacing: .18em; }
+      .boot-screen p { opacity: .7; }
+    </style>
+  </body>
+</html>
