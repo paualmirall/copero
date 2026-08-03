@@ -16,7 +16,7 @@ export const useGameStore = defineStore('game', () => {
   const finished = computed(() => !!state.value && state.value.player.age >= 38)
   watch(state, (value) => value && localStorage.setItem(STORAGE_KEY, JSON.stringify(value)), { deep: true })
   function createPlayer(input: { name: string; country: string; position: Position; club: string }) {
-    const player: Player = { ...input, age: 18, season: 2026, rating: 64, popularity: 12, fitness: 90, morale: 75, wealth: .2, salary: .5, titles: 0, sponsors: 0, companies: 0, injuries: 0, flags: [] }
+    const player: Player = { ...input, age: 16, season: 16, rating: 64, popularity: 12, fitness: 90, morale: 75, wealth: .2, salary: .5, titles: 0, sponsors: 0, companies: 0, injuries: 0, flags: [] }
     state.value = { player, strategies: { ...defaults }, history: [], pending: [], seenEvents: [] }; latestResult.value = null; prepareSeason()
   }
   function prepareSeason() { if (state.value && !finished.value) currentEvents.value = engine.getEvents(state.value) }
