@@ -37,7 +37,7 @@ export class SimulationEngine {
     const income = this.moneyEngine.calculate(p, strategies)
     const transfer = this.transferEngine.calculate(p, strategies); if (transfer) headlines.push(transfer)
     const result: SeasonResult = { season: p.season, age: p.age, club: p.club, matches, goals, assists, rating: p.rating, titles, injury: injury?.name, income, wealth: Number(p.wealth.toFixed(1)), headlines }
-    state.history.push(result); state.strategies = { ...strategies }; p.age++; p.season++
+    state.history.push(result); state.strategies = { ...strategies }; p.age++; p.season = p.age
     return result
   }
 }
