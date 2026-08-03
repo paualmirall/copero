@@ -1,0 +1,1730 @@
+[
+  {
+    "id": "nike_offer",
+    "category": "Patrocinio",
+    "title": "Una marca global llama a tu puerta",
+    "description": "Nike quiere que seas la cara de su nueva campaña.",
+    "weight": 3,
+    "requirements": [
+      {
+        "field": "popularidad",
+        "op": "gte",
+        "value": 25
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "sponsors",
+            "amount": 1,
+            "label": "Sponsors +1"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "boot_deal",
+    "category": "Patrocinio",
+    "title": "Botines con tu nombre",
+    "description": "Una marca prepara una edición exclusiva de tus botines.",
+    "weight": 4,
+    "requirements": [
+      {
+        "field": "popularidad",
+        "op": "gte",
+        "value": 40
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "sponsors",
+            "amount": 1,
+            "label": "Sponsors +1"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "documentary",
+    "category": "Imagen",
+    "title": "Dentro del vestuario",
+    "description": "Una plataforma quiere rodar un documental sobre tu temporada.",
+    "weight": 5,
+    "requirements": [
+      {
+        "field": "popularidad",
+        "op": "gte",
+        "value": 35
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularidad",
+            "amount": 10,
+            "label": "Popularidad +10"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "coach_conflict",
+    "category": "Vestuario",
+    "title": "Cruce con el entrenador",
+    "description": "El técnico cuestionó públicamente tu compromiso.",
+    "weight": 6,
+    "requirements": [
+      {
+        "field": "age",
+        "op": "gte",
+        "value": 19
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": -6,
+            "label": "Morale -6"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "position_change",
+    "category": "Carrera",
+    "title": "Una nueva posición",
+    "description": "El cuerpo técnico cree que puedes rendir en otra zona.",
+    "weight": 7,
+    "requirements": [
+      {
+        "field": "age",
+        "op": "gte",
+        "value": 18
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "rating",
+            "amount": 2,
+            "label": "Rating +2"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "renewal",
+    "category": "Contrato",
+    "title": "La renovación",
+    "description": "Tu club pone una extensión de contrato sobre la mesa.",
+    "weight": 3,
+    "requirements": [
+      {
+        "field": "rating",
+        "op": "gte",
+        "value": 65
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "salary",
+            "amount": 1.2,
+            "label": "Salary +1.2"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "national_team",
+    "category": "Selección",
+    "title": "La llamada de tu país",
+    "description": "Llegó la convocatoria que estabas esperando.",
+    "weight": 4,
+    "requirements": [
+      {
+        "field": "rating",
+        "op": "gte",
+        "value": 72
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularity",
+            "amount": 8,
+            "label": "Popularity +8"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "world_cup",
+    "category": "Selección",
+    "title": "El sueño mundialista",
+    "description": "Tu selección se prepara para el torneo más importante.",
+    "weight": 5,
+    "requirements": [
+      {
+        "field": "rating",
+        "op": "gte",
+        "value": 78
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularity",
+            "amount": 12,
+            "label": "Popularity +12"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "olympics",
+    "category": "Selección",
+    "title": "Rumbo a los Juegos",
+    "description": "La selección olímpica quiere contar contigo.",
+    "weight": 6,
+    "requirements": [
+      {
+        "field": "age",
+        "op": "gte",
+        "value": 18
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularity",
+            "amount": 8,
+            "label": "Popularity +8"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academy",
+    "category": "Negocios",
+    "title": "Tu propia academia",
+    "description": "Te proponen abrir una academia en tu ciudad natal.",
+    "weight": 7,
+    "requirements": [
+      {
+        "field": "wealth",
+        "op": "gte",
+        "value": 4
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "companies",
+            "amount": 1,
+            "label": "Companies +1"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hotel",
+    "category": "Negocios",
+    "title": "Comprar un hotel",
+    "description": "Apareció una oportunidad inmobiliaria junto al mar.",
+    "weight": 3,
+    "requirements": [
+      {
+        "field": "wealth",
+        "op": "gte",
+        "value": 8
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "companies",
+            "amount": 1,
+            "label": "Companies +1"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "restaurant",
+    "category": "Negocios",
+    "title": "Socio de un restaurante",
+    "description": "Un chef reconocido busca un socio futbolista.",
+    "weight": 4,
+    "requirements": [
+      {
+        "field": "wealth",
+        "op": "gte",
+        "value": 5
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "companies",
+            "amount": 1,
+            "label": "Companies +1"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "agent_change",
+    "category": "Carrera",
+    "title": "Cambiar de representante",
+    "description": "Una agencia internacional promete llevarte a la élite.",
+    "weight": 5,
+    "requirements": [
+      {
+        "field": "rating",
+        "op": "gte",
+        "value": 68
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularity",
+            "amount": 4,
+            "label": "Popularity +4"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fan_meeting",
+    "category": "Imagen",
+    "title": "El pedido de los hinchas",
+    "description": "La afición pide un encuentro abierto antes del clásico.",
+    "weight": 6,
+    "requirements": [
+      {
+        "field": "popularity",
+        "op": "gte",
+        "value": 20
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 6,
+            "label": "Morale +6"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "charity",
+    "category": "Imagen",
+    "title": "Partido solidario",
+    "description": "Una fundación local necesita que lideres su campaña.",
+    "weight": 7,
+    "requirements": [
+      {
+        "field": "wealth",
+        "op": "gte",
+        "value": 2
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularity",
+            "amount": 7,
+            "label": "Popularity +7"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "captaincy",
+    "category": "Vestuario",
+    "title": "El brazalete",
+    "description": "El vestuario te propone como nuevo capitán.",
+    "weight": 3,
+    "requirements": [
+      {
+        "field": "age",
+        "op": "gte",
+        "value": 25
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 9,
+            "label": "Morale +9"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rivalry",
+    "category": "Carrera",
+    "title": "La previa del clásico",
+    "description": "Un rival te provoca en redes antes del gran partido.",
+    "weight": 4,
+    "requirements": [
+      {
+        "field": "rating",
+        "op": "gte",
+        "value": 65
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularity",
+            "amount": 5,
+            "label": "Popularity +5"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "media_training",
+    "category": "Imagen",
+    "title": "Entrenamiento de prensa",
+    "description": "Tu entorno recomienda trabajar tu comunicación.",
+    "weight": 5,
+    "requirements": [
+      {
+        "field": "popularity",
+        "op": "gte",
+        "value": 15
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularity",
+            "amount": 4,
+            "label": "Popularity +4"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "personal_trainer",
+    "category": "Rendimiento",
+    "title": "Preparación de élite",
+    "description": "Un preparador prestigioso ofrece un plan personal.",
+    "weight": 6,
+    "requirements": [
+      {
+        "field": "wealth",
+        "op": "gte",
+        "value": 1
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 8,
+            "label": "Fitness +8"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rest_request",
+    "category": "Rendimiento",
+    "title": "El cuerpo pide descanso",
+    "description": "Acumulas minutos y el fisio recomienda parar.",
+    "weight": 7,
+    "requirements": [
+      {
+        "field": "age",
+        "op": "gte",
+        "value": 28
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 10,
+            "label": "Fitness +10"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "startup_seed",
+    "category": "Negocios",
+    "title": "La idea del futuro",
+    "description": "Dos jóvenes te invitan a invertir en una startup deportiva.",
+    "weight": 3,
+    "requirements": [
+      {
+        "field": "wealth",
+        "op": "gte",
+        "value": 3
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "wealth",
+            "amount": -2,
+            "label": "Wealth -2"
+          },
+          {
+            "field": "flag",
+            "value": "startup",
+            "label": "Te conviertes en inversor"
+          }
+        ],
+        "schedule": {
+          "eventId": "startup_round",
+          "years": 3
+        }
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "startup_round",
+    "category": "Negocios",
+    "title": "La empresa vuelve a llamar",
+    "description": "La startup necesita capital para dar el siguiente salto.",
+    "weight": 4,
+    "requirements": [
+      {
+        "field": "flag",
+        "op": "has",
+        "value": "startup"
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "wealth",
+            "amount": -3,
+            "label": "Wealth -3"
+          },
+          {
+            "field": "flag",
+            "value": "startup_more",
+            "label": "La empresa sigue creciendo"
+          }
+        ],
+        "schedule": {
+          "eventId": "startup_exit",
+          "years": 3
+        }
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "startup_exit",
+    "category": "Negocios",
+    "title": "Una oferta imposible",
+    "description": "Un gigante tecnológico quiere comprar la startup.",
+    "weight": 5,
+    "requirements": [
+      {
+        "field": "flag",
+        "op": "has",
+        "value": "startup_more"
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "wealth",
+            "amount": 18,
+            "label": "Wealth +18"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biography",
+    "category": "Imagen",
+    "title": "Contar tu historia",
+    "description": "Una editorial quiere publicar tu biografía.",
+    "weight": 6,
+    "requirements": [
+      {
+        "field": "age",
+        "op": "gte",
+        "value": 29
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularity",
+            "amount": 6,
+            "label": "Popularity +6"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gaming_team",
+    "category": "Negocios",
+    "title": "Entrar a los esports",
+    "description": "Un equipo competitivo te ofrece participación.",
+    "weight": 7,
+    "requirements": [
+      {
+        "field": "popularity",
+        "op": "gte",
+        "value": 35
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "companies",
+            "amount": 1,
+            "label": "Companies +1"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "shirt_number",
+    "category": "Vestuario",
+    "title": "El dorsal histórico",
+    "description": "Quedó libre el número que siempre soñaste usar.",
+    "weight": 3,
+    "requirements": [
+      {
+        "field": "rating",
+        "op": "gte",
+        "value": 70
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 5,
+            "label": "Morale +5"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "derby_penalty",
+    "category": "Carrera",
+    "title": "El penal del clásico",
+    "description": "En el minuto 90, el capitán te entrega la pelota.",
+    "weight": 4,
+    "requirements": [
+      {
+        "field": "rating",
+        "op": "gte",
+        "value": 73
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularity",
+            "amount": 8,
+            "label": "Popularity +8"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "transfer_rumour",
+    "category": "Mercado",
+    "title": "Rumores desde Europa",
+    "description": "La prensa asegura que un gigante sigue tus pasos.",
+    "weight": 5,
+    "requirements": [
+      {
+        "field": "rating",
+        "op": "gte",
+        "value": 75
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "popularity",
+            "amount": 5,
+            "label": "Popularity +5"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "family_advice",
+    "category": "Vida",
+    "title": "Una decisión familiar",
+    "description": "Tu familia te pide bajar el ritmo y disfrutar el camino.",
+    "weight": 6,
+    "requirements": [
+      {
+        "field": "age",
+        "op": "gte",
+        "value": 27
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 8,
+            "label": "Morale +8"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "farewell_plan",
+    "category": "Carrera",
+    "title": "Pensar en el retiro",
+    "description": "Tu entorno pregunta cómo quieres cerrar tu carrera.",
+    "weight": 7,
+    "requirements": [
+      {
+        "field": "age",
+        "op": "gte",
+        "value": 33
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceptar",
+        "description": "Apuesta por la oportunidad.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 5,
+            "label": "Morale +5"
+          }
+        ]
+      },
+      {
+        "id": "negotiate",
+        "label": "Negociar",
+        "description": "Busca un acuerdo más equilibrado.",
+        "effects": [
+          {
+            "field": "morale",
+            "amount": 2,
+            "label": "Moral +2"
+          },
+          {
+            "field": "popularity",
+            "amount": 2,
+            "label": "Popularidad +2"
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "label": "Rechazar",
+        "description": "Mantén el foco en el fútbol.",
+        "effects": [
+          {
+            "field": "fitness",
+            "amount": 3,
+            "label": "Forma +3"
+          }
+        ]
+      }
+    ]
+  }
+]

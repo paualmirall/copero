@@ -1,0 +1,10 @@
+<script setup lang="ts">
+import { reactive } from 'vue'
+import { ArrowRight, Trophy } from 'lucide-vue-next'
+import { useGameStore } from '../stores/game'
+import type { Position } from '../models/game'
+const store = useGameStore()
+const form = reactive({ name: '', country: 'Argentina', position: 'Delantero' as Position, club: 'Rosario Central' })
+const positions: Position[] = ['Delantero','Mediocampista','Defensor','Arquero']
+</script>
+<template><main class="create-shell"><section class="hero-copy"><div class="brand"><span class="brand-mark"><Trophy :size="20"/></span>COPERO</div><p class="eyebrow">TU HISTORIA. TUS DECISIONES.</p><h1>El fútbol recuerda<br/><em>a los que se atreven.</em></h1><p class="lead">Dieciocho años. Un primer contrato. Toda una carrera por escribir. Decide fuera de la cancha y deja que el fútbol haga el resto.</p><div class="career-path"><span>18</span><i></i><span>28</span><i></i><span>38</span></div></section><section class="form-card"><div><p class="step">NUEVA CARRERA · PASO 1 DE 1</p><h2>Crea tu jugador</h2><p>Todo gran nombre empezó en alguna parte.</p></div><form @submit.prevent="store.createPlayer(form)"><label>Nombre del jugador<input v-model="form.name" required maxlength="24" placeholder="Ej. Mateo Álvarez" /></label><label>País<select v-model="form.country"><option>Argentina</option><option>España</option><option>México</option><option>Colombia</option><option>Uruguay</option><option>Chile</option></select></label><label>Posición<div class="segmented"><button v-for="p in positions" :key="p" type="button" :class="{active: form.position===p}" @click="form.position=p">{{ p }}</button></div></label><label>Primer club<select v-model="form.club"><option>Rosario Central</option><option>Racing Club</option><option>River Plate</option><option>Boca Juniors</option></select></label><button class="primary" type="submit">COMENZAR MI HISTORIA <ArrowRight :size="18"/></button></form><small>Tu carrera se guarda automáticamente en este dispositivo.</small></section></main></template>
